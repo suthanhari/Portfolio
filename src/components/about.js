@@ -13,7 +13,7 @@ function About() {
             <div className='row'>
 
                 <div className='col-4'>
-                    <Zoom duration={1500}>
+                    <Zoom delay={1000} duration={1500}>
                         <div className='about-img'>
                             <img src={profilePhoto} alt='photo' />
                         </div>
@@ -26,7 +26,7 @@ function About() {
 
                         <div className='profile-name'>About</div>
                         <p className='profile-body'>
-                            <Fade left cascade delay={0} duration={1000}>
+                            <Fade left cascade delay={500} duration={1000}>
                                 Loremnsjhsjdncsndicjsidjcns. dcksjdcpisjdkcnsdmcsjkdbciusgdciushdjcsdncbsdkhcbsydgciusdhbcknsd cnsbdckhbsdicgsducbsjkdcbksdbckhsdcisdbckhsdckhsbdciysgcsbdcns
                             </Fade>
                         </p>
@@ -58,10 +58,10 @@ function About() {
 
 
 
-
                             <Link to='contact' smooth={true} duration={300} >
                                 <button className='connect-btn'>Let's Connect</button>
                             </Link>
+
                         </Fade>
                         <Fade right delay={500} duration={1000}>
 
