@@ -6,7 +6,7 @@ function Home() {
     return (
         <section id="home">
 
-            <Zoom delay={1100}>
+            <Zoom delay={1200} duration={2000}>
 
                 <img className="bg"
                     src="https://public-files.gumroad.com/variants/ikz3jnb86dyq3kvhiim2wbnp2s3d/4d4cb575366005157970186bb171da8f6b6b8bb857dcdd1f8e93774cc5f0900d"
@@ -15,7 +15,7 @@ function Home() {
 
             <div className="flex-text">
 
-                <Fade left delay={500}>
+                <Fade left delay={600}>
 
                     <div className="top">
                         <h1 className="float">I</h1>

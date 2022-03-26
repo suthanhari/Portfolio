@@ -23,12 +23,7 @@ body {
 
 
 
-main {
-  margin-left: 5rem;
-  margin-right: 5rem;
 
-
-}
 
 .flex-column {
   display: flex;
@@ -185,6 +180,8 @@ Home-start
 }
 
 .flex-text {
+  position: absolute;
+  left: 5rem;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -234,6 +231,7 @@ Home-start
   position: absolute;
   transform: translateY(30%);
   bottom: 5%;
+  left: 5rem;
   color: #000101;
   transition: transform 0.5s;
 }
@@ -429,7 +427,39 @@ About-Start
 }
 
 
+.link>a{
+  text-decoration: none;
+  color: #000;
+}
+.git>a{
+  text-decoration: none;
+  color: #000;
+}
+.pin>a{
+  text-decoration: none;
+  color: #000;
+}
+.twit>a{
+  text-decoration: none;
+  color: #000;
+}
 
+.link>a:hover{
+  text-decoration: none;
+  color: #0e76a8;
+}
+.git>a:hover{
+  text-decoration: none;
+  color: #000101;
+}
+.pin>a:hover{
+  text-decoration: none;
+  color: #E60023;
+}
+.twit>a:hover{
+  text-decoration: none;
+  color: #00acee;
+}
 
 .card-foot {
   position: relative;
@@ -481,10 +511,7 @@ About-Start
   position: relative;
 }
 
-.tooltipro>a {
-  color: #000;
-  text-decoration: none;
-}
+
 
 .tooltipro {
   margin-left: 0.500rem;
@@ -1033,7 +1060,7 @@ modal-Start
 .modal {
   position: absolute;
   left: 0%;
-  top: 0;
+  top: 0%;
   z-index: 1;
   width: 100%;
   border: 0;
@@ -1044,6 +1071,7 @@ modal-Start
 .modal-content {
   position: absolute;
   left: 40%;
+  top: 40%;
   background: #fff;
   padding: 1rem;
   width: 50ch;
@@ -1130,16 +1158,19 @@ modal-End
   position: relative;
   max-width: 18rem;
   max-height: auto;
+  margin-left: 5rem;
   display: flex;
   flex-direction: column;
   background-color: transparent;
 
 }
 
+
+
 .about-body {
   position: absolute;
   text-align: center;
-  right: -10%;
+  right: -20%;
   top: 0%;
 }
 
