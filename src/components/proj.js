@@ -5,10 +5,10 @@ import projImg from './images/proj.png'
 function Proj() {
 
 
-const [show,setShow] = useState(false);
+    const [show, setShow] = useState(false);
 
-let handleShow = () => setShow(true);
-let handleClose = () => setShow(false);
+    let handleShow = () => setShow(true);
+    let handleClose = () => setShow(false);
 
 
     return (
@@ -34,7 +34,7 @@ let handleClose = () => setShow(false);
                         <div class="card-btn">
                             <button class="button">Backend Repositry</button>
                             <button class="button">Frontend Repositry</button>
-                            <button class="button">Live</button>
+                            <button class="button" onClick={handleShow}>Live</button>
 
                         </div>
 
@@ -80,12 +80,14 @@ let handleClose = () => setShow(false);
 
 
 
+            
+
+
+            
 
 
 
-
-
-
+            
 
         </section>
     )

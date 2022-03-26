@@ -325,17 +325,10 @@ About-Start
   box-shadow: 0.25rem 0.25rem 0 #000;
 }
 
-.profile-image {
-  border-radius: 50%;
-  transform: scale(.98);
-  transition-property: transform;
-  transition-timing-function: ease;
-  transition-duration: .35s;
-  transition-delay: 0s;
-}
 
-.profile-image:hover {
-  transform: scale(1);
+
+.about{
+  text-align: left;
 }
 
 
@@ -345,39 +338,26 @@ About-Start
   letter-spacing: 0.125rem;
 }
 
-
-
-.profile-position {
-  margin: 0%;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: 1px;
-  color: var(--text-color);
-  margin-bottom: 2em;
+.profile-link{
+  display: flex;
+  flex-direction: row;
 }
+
+.profile-btns{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
 
 .profile-body {
   font-weight: 300;
-  margin-bottom: 0;
+
 }
 
-@media (min-width:600px) {
-  .card-profile {
-    flex-direction: row;
-  }
 
-  .profile-main {
-    text-align: left;
-    margin-left: 2em;
-  }
-
-  .profile-name::after {
-    margin-left: 0%;
-  }
-}
 
 .connect-btn {
-  margin-top: 1em;
   display: inline-block;
   text-decoration: none;
   padding: 0.375rem 0.75rem;
@@ -403,13 +383,16 @@ About-Start
 }
 
 .resume-btn {
+  position: absolute;
   display: inline-block;
   text-decoration: none;
   padding: 0.375rem 0.75rem;
   text-align: center;
   background-color: #000;
+  top: 43%;
   color: #fff;
   cursor: pointer;
+  margin:0 0 0 40em ;
   border: 1px solid #000;
   border-radius: 0.25rem;
   transition-property: box-shadow, transform, background-color, color, border;
@@ -427,36 +410,42 @@ About-Start
 }
 
 
-.link>a{
-  text-decoration: none;
-  color: #000;
-}
-.git>a{
-  text-decoration: none;
-  color: #000;
-}
-.pin>a{
-  text-decoration: none;
-  color: #000;
-}
-.twit>a{
+.link>a {
   text-decoration: none;
   color: #000;
 }
 
-.link>a:hover{
+.git>a {
+  text-decoration: none;
+  color: #000;
+}
+
+.pin>a {
+  text-decoration: none;
+  color: #000;
+}
+
+.twit>a {
+  text-decoration: none;
+  color: #000;
+}
+
+.link>a:hover {
   text-decoration: none;
   color: #0e76a8;
 }
-.git>a:hover{
+
+.git>a:hover {
   text-decoration: none;
   color: #000101;
 }
-.pin>a:hover{
+
+.pin>a:hover {
   text-decoration: none;
   color: #E60023;
 }
-.twit>a:hover{
+
+.twit>a:hover {
   text-decoration: none;
   color: #00acee;
 }
@@ -1146,38 +1135,40 @@ dialog::backdrop {
 modal-End
 ----- */
 
+
+.card-about {
+  position: relative;
+  max-width: 840px;
+  max-height: auto;
+  border: 1px solid #000;
+}
 .about-img {
-  max-width: 200px;
+  width: 200px;
+  margin-left: 5rem;
 }
 
 .about-img>img {
   width: 100%;
 }
 
-.card-about {
-  position: relative;
-  max-width: 18rem;
-  max-height: auto;
-  margin-left: 5rem;
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-
-}
-
-
-
-.about-body {
+.card-about>.about-body {
   position: absolute;
-  text-align: center;
-  right: -20%;
+  max-width: 640px;
   top: 0%;
+  left: 100%;
 }
 
-.about-link {
-  display: flex;
-
+.side{
+display: flex;
+flex-direction: row;
 }
+
+
+
+
+
+
+
 
 
 
