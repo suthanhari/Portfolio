@@ -327,7 +327,7 @@ About-Start
 
 
 
-.about{
+.about {
   text-align: left;
 }
 
@@ -338,12 +338,12 @@ About-Start
   letter-spacing: 0.125rem;
 }
 
-.profile-link{
+.profile-link {
   display: flex;
   flex-direction: row;
 }
 
-.profile-btns{
+.profile-btns {
   display: flex;
   justify-content: space-evenly;
 }
@@ -392,7 +392,7 @@ About-Start
   top: 43%;
   color: #fff;
   cursor: pointer;
-  margin:0 0 0 40em ;
+  margin: 0 0 0 40em;
   border: 1px solid #000;
   border-radius: 0.25rem;
   transition-property: box-shadow, transform, background-color, color, border;
@@ -413,21 +413,37 @@ About-Start
 .link>a {
   text-decoration: none;
   color: #000;
+  transition-property: color;
+  transition-duration: 0.14s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
 
 .git>a {
   text-decoration: none;
   color: #000;
+  transition-property: color;
+  transition-duration: 0.14s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
 
 .pin>a {
   text-decoration: none;
   color: #000;
+  transition-property: color;
+  transition-duration: 0.14s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
 
 .twit>a {
   text-decoration: none;
   color: #000;
+  transition-property: color;
+  transition-duration: 0.14s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
 
 .link>a:hover {
@@ -1142,13 +1158,26 @@ modal-End
   max-height: auto;
   border: 1px solid #000;
 }
+
 .about-img {
   width: 200px;
   margin-left: 5rem;
+  
+}
+
+
+
+.about-img>:hover {
+  transform: scale(1);
 }
 
 .about-img>img {
   width: 100%;
+  transform: scale(.98);
+  transition-property: transform;
+  transition-duration: 0.35s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
 
 .card-about>.about-body {
@@ -1158,9 +1187,9 @@ modal-End
   left: 100%;
 }
 
-.side{
-display: flex;
-flex-direction: row;
+.side {
+  display: flex;
+  flex-direction: row;
 }
 
 
