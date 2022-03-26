@@ -44,31 +44,29 @@ function Proj() {
                     <div class="select-head">
                         Technology Used <i class="fa-solid fa-angle-down"></i>
                     </div>
-                    <div class="select" >
-                        <ul>
-                            <li>Html</li>
-                            <li>Css</li>
-                            <li>Javascript</li>
-                            <li>React</li>
-                            <li>Nodejs</li>
-                            <li>Expressjs</li>
-                            <li>Mongodb</li>
-                        </ul>
-                    </div>
+
+                    <ul class="select">
+                        <li>Javascript</li>
+                        <li>React</li>
+                        <li>Nodejs</li>
+                        <li>Expressjs</li>
+                        <li>Mongodb</li>
+                    </ul>
+
 
                 </div>
 
             </div>
 
 
-            {/* <dialog className='modal'>
+            <dialog className='modal'>
                 <div className='modal-content'>
                     <div className='login'>
                         <button className='modal-login'>LoginIn <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                     <button className='modal-btn'>close</button>
                 </div>
-            </dialog> */}
+            </dialog>
 
 
 

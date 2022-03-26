@@ -777,7 +777,7 @@ Proj-Start
 
 }
 
-.select>ul>li {
+.select>li {
   text-decoration: none;
   list-style: decimal-leading-zero;
 
