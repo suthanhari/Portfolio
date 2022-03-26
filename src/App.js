@@ -20,13 +20,13 @@ function App() {
 
         <Home />
 
-        <Fade left>
+        <Fade left >
           <About />
         </Fade>
 
         <Skill />
 
-        <Fade left>
+        <Fade left >
           <Proj />
         </Fade>
 
