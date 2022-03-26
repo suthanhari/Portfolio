@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Fade } from 'react-reveal';
 import projImg from './images/proj.png'
 
 function Proj() {
 
 
+const [show,setShow] = useState(false);
 
+let handleShow = () => setShow(true);
+let handleClose = () => setShow(false);
 
 
     return (
@@ -20,7 +23,7 @@ function Proj() {
                     <div class="card-tit">
                         <h5>Food Ordering</h5>
                     </div>
-                    <div className='card-img'>
+                    <div className='card-img' onClick={handleShow}>
                         <img src={projImg} alt="proj" />
                     </div>
                     <div class="card-body">
@@ -59,12 +62,13 @@ function Proj() {
             </div>
 
 
-            <dialog className='modal'>
+            <dialog open={show} className='modal'>
                 <div className='modal-content'>
+                    <p>Please Login to Continue</p>
                     <div className='login'>
                         <button className='modal-login'>LoginIn <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
-                    <button className='modal-btn'>close</button>
+                    <button onClick={handleClose} className='modal-btn'>close</button>
                 </div>
             </dialog>
 
