@@ -30,6 +30,16 @@ main {
 
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
 /* ----------
   TopBar-Start
 -------------*/
@@ -59,10 +69,6 @@ main {
   margin-right: 1rem;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-}
 
 .nav-list>a {
   text-decoration: none;
@@ -528,9 +534,10 @@ About-Start
 
 }
 
-.resume-btn{
+.resume-btn {
   margin-top: 1rem;
 }
+
 /* ----
 About-End
 ----- */
@@ -682,13 +689,12 @@ Proj-Start
 -------*/
 
 #project {
-
-  height: 100vh;
+  height: 130vh;
   margin: 0;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 
 }
 
@@ -786,18 +792,20 @@ Proj-Start
 .select {
   text-align: left;
   background-color: #fff;
-  /* box-shadow: 0 2px 4px 0 rgb(0 0 0 /6%); */
-  box-shadow: 0 30px 90px -20px rgb(0 0 0 / 30%), 0 0 1px 1px rgb(0 0 0 / 5%);
+  height: auto;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 /6%);
   opacity: 0;
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition-duration: 0.5s;
   transition-delay: 0s;
+
 }
 
 
 .select-container:hover .select {
   opacity: 1;
+  z-index: 1;
 }
 
 

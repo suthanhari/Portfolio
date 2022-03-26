@@ -49,10 +49,12 @@ let handleClose = () => setShow(false);
                     </div>
 
                     <ul class="select">
+                        <li>Html</li>
+                        <li>Css</li>
                         <li>Javascript</li>
                         <li>React</li>
-                        <li>Nodejs</li>
                         <li>Expressjs</li>
+                        <li>Nodejs</li>
                         <li>Mongodb</li>
                     </ul>
 
