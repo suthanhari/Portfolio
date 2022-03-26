@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import { Fade } from 'react-reveal';
 import './App.css';
+import About from './components/about';
+import Contact from './components/contact';
+import Home from './components/home';
+import Navbar from './components/navbar';
+import Proj from './components/proj';
+import Skill from './components/skill';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <nav className='topbar' id="topbar">
+        <Navbar />
+      </nav>
+
+
+      <main>
+
+        <Home />
+
+        <Fade left>
+          <About />
+        </Fade>
+
+        <Skill />
+
+        <Fade left>
+          <Proj />
+        </Fade>
+
+        <Contact />
+
+      </main>
+    </>
   );
 }
 
