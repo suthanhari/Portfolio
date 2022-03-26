@@ -66,11 +66,12 @@ function Proj() {
 
             <dialog open={show} className='modal'>
                 <div className='modal-content'>
+                    <p onClick={handleClose}>X</p>
                     <p>Please Login to Continue</p>
                     <div className='login'>
-                        <button className='modal-login'>LoginIn <i class="fa-solid fa-arrow-right"></i></button>
+                        <button className='modal-login'>LogIn <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
-                    <button onClick={handleClose} className='modal-btn'>close</button>
+                    <button onClick={handleClose} className='modal-btn'>Cancle</button>
                 </div>
             </dialog>
 
