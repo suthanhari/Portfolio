@@ -26,9 +26,7 @@ function About() {
 
                         <div className='profile-name'>About</div>
                         <p className='profile-body'>
-                            <Fade left cascade delay={500} duration={1000}>
-                                Loremnsjhsjdncsndicjsidjcns. dcksjdcpisjdkcnsdmcsjkdbciusgdciushdjcsdncbsdkhcbsydgciusdhbcknsd cnsbdckhbsdicgsducbsjkdcbksdbckhsdcisdbckhsdckhsbdciysgcsbdcns
-                            </Fade>
+                           
                         </p>
 
                         <Fade left delay={500} duration={1000}>
@@ -65,7 +63,7 @@ function About() {
                         </Fade>
                         <Fade right delay={500} duration={1000}>
 
-                            <a href='https://drive.google.com/file/d/1lA-pPbwMsAYh81g2N8flPsB_m-qrqVNC/view?usp=sharing'
+                            <a href='https://drive.google.com/file/d/1y-hdD7yke7b42OhWe0OF4Kz-bZESamLe/view?usp=sharing'
                                 target="_blank" rel="noreferrer">
                                 <button className="resume-btn"> Resume</button>
                             </a>
