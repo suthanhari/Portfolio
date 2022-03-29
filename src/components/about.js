@@ -13,20 +13,23 @@ function About() {
             <div className='row'>
 
                 <div className='col-4'>
-                    <Zoom delay={1000} duration={1500}>
-                        <div className='about-img'>
+                    <div className='about-img'>
+                        <Zoom delay={1000} duration={1500}>
                             <img src={profilePhoto} alt='photo' />
-                        </div>
-                    </Zoom>
-
-
+                        </Zoom>
+                    </div>
                 </div>
+
+
                 <div className='col-7'>
                     <div className='about'>
 
                         <div className='profile-name'>About</div>
                         <p className='profile-body'>
-                           
+                            👋Hey Iam Junior FullStack Developer who Is seeking for the job,
+                            I love creating  Web Applications , my dream is to be greatness in my field.
+                            My MERN stack journey has Started simply with HTML5 and CSS3,Later I had joined course to Skill up.
+
                         </p>
 
                         <Fade left delay={500} duration={1000}>
