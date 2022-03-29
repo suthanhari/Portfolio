@@ -61,7 +61,7 @@ function About() {
                             </Link>
 
                         </Fade>
-                        <Fade left delay={500} duration={1000}>
+                        <Fade right delay={500} duration={1000}>
 
                             <a href='https://drive.google.com/file/d/1y-hdD7yke7b42OhWe0OF4Kz-bZESamLe/view?usp=sharing'
                                 target="_blank" rel="noreferrer">
