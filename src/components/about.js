@@ -27,7 +27,7 @@ function About() {
                         <div className='profile-name'>About</div>
                         <p className='profile-body'>
                             👋Hey Iam Hari Suthan Junior FullStack Developer who Is seeking for the job,
-                            I love creating  Web Applications , my dream is to be greatness in my field.
+                            I love creating  Web Applications , my dream is to be greatness in own field.
                             my MERN stack journey has Started simply with HTML5 and CSS3,Later I had joined course to Skill up.
 
                         </p>
