@@ -66,7 +66,7 @@ function About() {
                         </Fade>
                         <Fade right delay={500} duration={1000}>
 
-                            <a href='https://drive.google.com/file/d/1y-hdD7yke7b42OhWe0OF4Kz-bZESamLe/view?usp=sharing'
+                            <a href='https://drive.google.com/drive/folders/19SDp65QpqeCNKTHBI5wi_cqu0HUaGZGO?usp=sharing'
                                 target="_blank" rel="noreferrer">
                                 <button className="resume-btn"> Resume</button>
                             </a>
