@@ -165,7 +165,7 @@ Home-start
 #home {
   height: 100vh;
   margin: 0;
-position: relative;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -256,8 +256,7 @@ position: relative;
 
 .scroll {
   position: absolute;
-  transform: translateY(30%);
-  bottom: 5%;
+  bottom: 20%;
   left: 5rem;
   color: #000101;
   transition: transform 0.5s;
@@ -1166,10 +1165,10 @@ modal-Start
 
 .modal-btn:hover:not(:active) {
   box-shadow: 0.25rem 0.25rem #000;
-  transform: translate(-0.25rem , -0.25rem);
+  transform: translate(-0.25rem, -0.25rem);
 }
 
-.modal-btn:active{
+.modal-btn:active {
   border-style: inset;
 }
 
