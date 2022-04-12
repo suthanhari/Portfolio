@@ -38,6 +38,14 @@ body {
 /* ----------
   TopBar-Start
 -------------*/
+#topbar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  justify-items: center;
+}
+
+
+
 .topbar {
   position: sticky;
   width: 100%;
@@ -54,6 +62,10 @@ body {
   z-index: 1;
 }
 
+.fa-bars {
+  display: none;
+}
+
 .topbar>.top-bar {
   list-style: none;
   display: flex;
@@ -66,32 +78,33 @@ body {
 
 
 .nav-list>a {
+  display: inline-block;
   text-decoration: none;
   color: var(--text-color);
-  padding: 0.25rem;
+  padding: 0.375rem 0.75rem;
   border-radius: 0.25rem;
   border: 1px solid #000;
-  transition-property: box-shadow;
-  transition-timing-function: ease-out;
+  background-color: #ff90e8;
   cursor: pointer;
+  transition-property: all;
+  transition-timing-function: ease-out;
   transition-duration: 0.14s;
   transition-delay: 0s;
 }
 
-.nav-list>a:hover {
-  box-shadow: 0.25rem 0.25rem 0 0 #000;
+
+.nav-list>a:hover:not(:active) {
+  box-shadow: 0.25rem 0.25rem #000;
   transform: translate(-0.25rem, -0.25rem);
+}
+
+.nav-list>a:active {
+  border-style: inset;
 }
 
 
 
-.active {
-  box-shadow: 0.25rem 0.25rem 0 #000;
-  background-color: #ff90e8;
-  color: #fff;
-  transform: translate(-0.25rem, -0.25rem);
-  border-radius: 0.25rem;
-}
+
 
 /* ----------
   TopBar-End
@@ -130,7 +143,8 @@ row-col-start
   float: left;
   width: 70%;
   padding: 10px;
-
+  display: flex;
+  align-items: center;
 }
 
 .row::after {
@@ -149,14 +163,27 @@ Home-start
 -----*/
 
 #home {
-  height: 90vh;
+  height: 100vh;
   margin: 0;
-  position: relative;
+position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /* padding-top: 5rem; */
+}
 
+
+.h-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+.a-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  justify-items: center;
+  align-items: center;
 }
 
 .bg {
@@ -252,13 +279,13 @@ Home-start
   text-decoration: none;
   border: none;
   padding: 0.375rem 0.75rem;
-  background-color: #fff;
+  background-color: #36a9ae;
   letter-spacing: 0.3ch;
   color: #000101;
   border-radius: 0.25rem;
   border: 1px solid #000;
   cursor: pointer;
-  transition-property: box-shadow;
+  transition-property: all;
   transition-timing-function: ease-out;
   transition-duration: 0.14s;
   transition-delay: 0s;
@@ -266,8 +293,13 @@ Home-start
 }
 
 
-.scroll>a>button:hover {
+.scroll>a>button:hover:not(:active) {
   box-shadow: 0.25rem 0.25rem 0 #000;
+  transform: translate(-0.25rem -0.25rem);
+}
+
+.scroll>a>button:active {
+  border-style: inset;
 }
 
 .scroll-btn>.fa-solid {
@@ -290,13 +322,12 @@ Home-End
 About-Start
 ----- */
 #about {
-  height: 90vh;
+  height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-top: 0.0625rem solid #000;
-  border-bottom: 0.0625rem solid #000;
+
 
 }
 
@@ -361,25 +392,26 @@ About-Start
   display: inline-block;
   text-decoration: none;
   padding: 0.375rem 0.75rem;
-  text-align: center;
   background-color: #000;
   color: #fff;
-  cursor: pointer;
+  background-color: #36a9ae;
+  text-align: center;
   border: 1px solid #000;
   border-radius: 0.25rem;
-  transition-property: box-shadow, transform, background-color, color, border;
+  cursor: pointer;
+  transition-property: all;
   transition-timing-function: ease-out;
   transition-duration: 0.14s;
   transition-delay: 0s;
 }
 
-.connect-btn:hover {
-  box-shadow: 0.25rem 0.25rem 0 #000;
+.connect-btn:hover:not(:active) {
+  box-shadow: 0.25rem 0.25rem #000;
   transform: translate(-0.25rem, -0.25rem);
-  background-color: #36a9ae;
-  color: #fff;
-  border: 1px solid #000;
-  /* background: #36a9ae; */
+}
+
+.connect-btn:active {
+  border-style: inset;
 }
 
 .resume-btn {
@@ -388,25 +420,27 @@ About-Start
   text-decoration: none;
   padding: 0.375rem 0.75rem;
   text-align: center;
-  background-color: #000;
+  background-color: #36a9ae;
   top: 43%;
   color: #fff;
   cursor: pointer;
   margin: 0 0 0 40em;
   border: 1px solid #000;
   border-radius: 0.25rem;
-  transition-property: box-shadow, transform, background-color, color, border;
+  transition-property: all;
   transition-timing-function: ease-out;
   transition-duration: 0.14s;
   transition-delay: 0s;
 }
 
-.resume-btn:hover {
-  box-shadow: 0.25rem 0.25rem 0 #000;
+.resume-btn:hover:not(:active) {
+  box-shadow: 0.25rem 0.25rem #000;
   transform: translate(-0.25rem, -0.25rem);
-  background-color: #36a9ae;
-  color: #fff;
-  border: 1px solid #000;
+
+}
+
+.resume-btn:active {
+  border-style: inset;
 }
 
 
@@ -579,7 +613,7 @@ Skill-Start
 ------- */
 #skill {
 
-  height: 90vh;
+  height: 100vh;
   margin: 0;
   position: relative;
   display: flex;
@@ -607,30 +641,34 @@ Skill-Start
 }
 
 .card-skill>a>button {
+  display: inline-block;
   border: none;
   text-decoration: none;
-  display: inline-block;
   text-align: center;
   padding: 0.375rem 0.75rem;
+  background-color: #36a9ae;
   border-radius: 0.25rem;
   cursor: pointer;
-  background: #000;
-  color: #fff;
+  color: #000101;
   border: 1px solid #000;
   border-radius: 0.25rem;
-  transition-property: box-shadow, transform, background-color, color, border;
+  transition-property: all;
   transition-duration: 0.14s;
   transition-timing-function: ease-out;
   transition-delay: 0s;
 }
 
-.card-skill>a>button:hover {
+.card-skill>a>button:hover:not(:active) {
   box-shadow: 0.25rem 0.25rem 0 #000;
   transform: translate(-0.25rem, -0.25rem);
-  background-color: #36a9ae;
-  color: #fff;
-  border: 1px solid #000;
+
 }
+
+.card-skill>a>button:active {
+  border-style: inset;
+}
+
+
 
 
 .card-skill>h2 {
@@ -721,7 +759,7 @@ Proj-Start
 -------*/
 
 #project {
-  height: 130vh;
+  height: 100vh;
   margin: 0;
   position: relative;
   display: flex;
@@ -853,21 +891,25 @@ Proj-Start
   padding: 0.375rem 0.75rem;
   background-color: #000;
   color: #fff;
+  background-color: #36a9ae;
   text-align: center;
   border: 1px solid #000;
   border-radius: 0.25rem;
   cursor: pointer;
-  transition-property: box-shadow, transform, background-color, border;
+  transition-property: all;
   transition-timing-function: ease-out;
   transition-duration: 0.14s;
   transition-delay: 0s;
 }
 
-.card-btn>.button:hover {
-  background-color: #36a9ae;
-  border: 1px solid #000;
+.card-btn>.button:hover:not(:active) {
+
   box-shadow: 0.25rem 0.25rem #000;
   transform: translate(-0.25rem, -0.25rem);
+}
+
+.card-btn>.button:active {
+  border-style: inset;
 }
 
 /* ----
@@ -878,7 +920,7 @@ Contact-Start
 -----------*/
 
 #contact {
-
+  height: 100vh;
   background-color: #fff;
   height: 90vh;
   margin: 0;
@@ -936,8 +978,8 @@ Contact-Start
   font-weight: 500;
   border-radius: 0.25rem;
   cursor: pointer;
-  color: #fff;
-  transition-property: box-shadow, transform;
+  color: #000101;
+  transition-property: all;
   transition-duration: 0.14s;
   transition-timing-function: ease-out;
   transition-delay: 0s;
@@ -945,28 +987,30 @@ Contact-Start
 
 
 
-.form-btn:hover {
-  box-shadow: 0.25rem 0.25rem 0 #000;
+.form-btn:hover:not(:active) {
+  box-shadow: 0.25rem 0.25rem #000;
   transform: translate(-0.25rem, -0.25rem);
 }
 
-
+.form-btn:active {
+  border-style: inset;
+}
 
 .scroll-top>a>button {
-  display: inline;
+  display: inline-block;
   position: absolute;
   right: 10%;
   bottom: 10%;
   text-decoration: none;
   border: none;
   padding: 0.375rem 0.75rem;
-  background-color: #fff;
+  background-color: #36a9ae;
   letter-spacing: 0.3ch;
   color: #000101;
   border-radius: 0.25rem;
   border: 1px solid #000;
   cursor: pointer;
-  transition-property: box-shadow;
+  transition-property: all;
   transition-timing-function: ease-out;
   transition-duration: 0.14s;
   transition-delay: 0s;
@@ -978,8 +1022,13 @@ Contact-Start
   text-decoration: none;
 }
 
-.scroll-top>a>button:hover {
-  box-shadow: 0.25rem 0.25rem 0 #000;
+.scroll-top>a>button:hover:not(:active) {
+  box-shadow: 0.25rem 0.25rem #000;
+  transform: translate(-0.25rem, -0.25rem);
+}
+
+.scroll-top>a>button:active {
+  border-style: inset;
 }
 
 .scroll-btn>.fa-solid {
@@ -1101,13 +1150,13 @@ modal-Start
   text-align: center;
   vertical-align: center;
   padding: 0.375rem 0.75rem;
-  margin: 1rem 0 0 12rem;
+  margin: 1rem 0 0 10rem;
   border-radius: 0.25rem;
   border: 1px solid #000;
   background-color: #ff0000;
   color: #fff;
   cursor: pointer;
-  transition-property: box-shadow;
+  transition-property: all;
   transition-timing-function: ease-out;
   transition-duration: 0.14s;
   transition-delay: 0s;
@@ -1115,8 +1164,13 @@ modal-Start
 
 
 
-.modal-btn:hover {
-  box-shadow: 0.25rem 0.25rem 0 #000;
+.modal-btn:hover:not(:active) {
+  box-shadow: 0.25rem 0.25rem #000;
+  transform: translate(-0.25rem , -0.25rem);
+}
+
+.modal-btn:active{
+  border-style: inset;
 }
 
 
@@ -1162,10 +1216,7 @@ modal-End
 .about-img {
   width: 200px;
   margin-left: 5rem;
-  
 }
-
-
 
 .about-img>:hover {
   transform: scale(1);
@@ -1192,16 +1243,73 @@ modal-End
   flex-direction: row;
 }
 
-
-
-
-
-
-
-
-
-
 .border {
   border: 0.0625rem solid #000;
   border-radius: 0.25rem;
 }
+
+
+
+/* ----
+responsive-Start
+------ */
+/* small-screen */
+
+
+
+/* ----
+responsive-End
+------ */
+
+/* .topbar{
+  position: sticky;
+  width: 100%;
+  top: 0%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  color: #000101;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  padding: 0.500rem;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+
+.topbar>.top-bar {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list {
+  margin-right: 1rem;
+}
+
+
+.nav-list>a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid #000;
+  background-color: #ff90e8;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: ease-out;
+  transition-duration: 0.14s;
+  transition-delay: 0s;
+}
+
+
+.nav-list>a:hover:not(:active) {
+  box-shadow: 0.25rem 0.25rem #000;
+  transform: translate(-0.25rem, -0.25rem);
+}
+
+.nav-list>a:active {
+  border-style: inset;
+} */

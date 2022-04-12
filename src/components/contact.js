@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { useFormik } from 'formik'
-import React from 'react'
+import { useFormik } from 'formik';
+import React from 'react';
 import { Fade } from 'react-reveal';
 import { Link } from 'react-scroll/modules';
 
@@ -13,12 +13,13 @@ function Contact() {
             email: "",
             comments: ""
         },
-        onSubmit: async values => {
+        onSubmit: async (values) => {
             try {
                 await axios.post("https://myportfolio-node-app.herokuapp.com/client/create", values);
-                alert("Success  Added");
+                alert("Success Added");
             } catch (error) {
                 console.log(error);
+
             }
 
         }
@@ -27,34 +28,34 @@ function Contact() {
 
     return (
         <section id="contact">
-            <Fade left>
-
-                <form onSubmit={formik.handleSubmit}>
-
-                    <label for="name">Name</label><br />
-                    <input type="text" className="form" id="name" name="name" placeholder="Enter Name"
-                        onChange={formik.handleChange} value={formik.values.name} required />
 
 
+            <form onSubmit={formik.handleSubmit}>
 
-                    <label for="email">Email</label><br />
-                    <input type="email" className="form" id="email" name="email" placeholder="example@gmail.com"
-                        onChange={formik.handleChange} value={formik.values.email} required />
+                <label for="name">Name</label><br />
+                <input type="text" className="form" id="name" name="name" placeholder="Enter Name"
+                    onChange={formik.handleChange} value={formik.values.name} required />
 
 
 
-
-                    <label for="comments">Comments</label><br />
-                    <textarea name="comments" className="form" id="comments" cols="50" rows="5" placeholder="Type your comments"
-                        onChange={formik.handleChange} value={formik.values.comments} required></textarea>
-
-
-                    <button className="form-btn" type="submit">Sent</button>
+                <label for="email">Email</label><br />
+                <input type="email" className="form" id="email" name="email" placeholder="example@gmail.com"
+                    onChange={formik.handleChange} value={formik.values.email} required />
 
 
 
-                </form>
-            </Fade>
+
+                <label for="comments">Comments</label><br />
+                <textarea name="comments" className="form" id="comments" cols="50" rows="5" placeholder="Type your comments"
+                    onChange={formik.handleChange} value={formik.values.comments} required></textarea>
+
+
+                <button className="form-btn" type="submit">Sent <i class="fa-regular fa-paper-plane"></i></button>
+
+
+
+            </form>
+
 
 
 
